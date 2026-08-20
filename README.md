@@ -27,7 +27,7 @@ La détection et les recettes reposent sur Gemini avec la clé personnelle de l�
 - personnalisation par régime, objectifs, allergies, aliments refusés ou appréciés, cuisines favorites et consigne libre ;
 - plage calorique, caractère obligatoire ou facultatif du féculent, liste des féculents autorisés, niveau d’épices et temps maximal entièrement réglables ;
 - régénération automatique des recettes dès que le profil change ;
-- recettes Gemini pour une personne, composées de quatre à sept ingrédients et d’étapes complètes ;
+- recettes composées par Gemini pour une personne, composées de quatre à sept ingrédients et d’étapes complètes ;
 - repas dans la plage calorique choisie, avec au choix riz, pâtes, pommes de terre, semoule, quinoa, pain ou légumineuses ;
 - estimation du coût d’une portion à partir des quantités de la recette et des prix du ticket ;
 - affichage du coût de chaque repas, du budget total des recettes et du prix moyen par repas ;
