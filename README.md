@@ -4,7 +4,7 @@
 
 # Mijot — assistant de repas iOS à partir de tickets PDF
 
-Cette version ne se connecte pas à Intermarché. Elle importe un ticket PDF depuis l’app Fichiers, le fait analyser par Gemini, laisse l’utilisateur corriger les aliments retenus, puis alimente un inventaire JSON privé stocké sur l’appareil.
+Elle importe un ticket PDF depuis les fichiers, le fait analyser par Gemini, laisse l’utilisateur corriger les aliments retenus, puis alimente un inventaire JSON privé stocké sur l’appareil.
 
 La détection et les recettes reposent sur Gemini avec la clé personnelle de l’utilisateur. Aucun catalogue de recettes local n’est affiché : le nombre de recettes choisi par l’utilisateur est généré pour le stock réellement présent.
 
@@ -46,8 +46,8 @@ La détection et les recettes reposent sur Gemini avec la clé personnelle de l�
 
 ## Ouvrir le projet
 
-1. Ouvrir `Mijot.xcodeproj` avec Xcode 26.6 ou plus récent.
-2. Choisir un simulateur iPhone avec iOS 18 ou plus récent.
+1. Ouvrir `Mijot.xcodeproj` avec Xcode 26.6 ou plus.
+2. Choisir un simulateur iPhone avec iOS 18 ou plus.
 3. Lancer la cible `Mijot`.
 
 Le projet utilise une signature automatique. Pour l’installer sur un iPhone, sélectionner son équipe de développement dans **Signing & Capabilities**.
@@ -55,7 +55,7 @@ Le projet utilise une signature automatique. Pour l’installer sur un iPhone, s
 ## Activer Gemini gratuitement pour un usage personnel
 
 1. Créer une clé dans [Google AI Studio](https://aistudio.google.com/app/apikey).
-2. Dans l’onglet **Pour vous**, toucher l’icône ✨ en haut à droite.
+2. Dans l’onglet **Pour vous**, toucher l’icône en haut à droite.
 3. Coller la clé, puis choisir **Enregistrer et générer**.
 
 Les appareils de cuisine se règlent dans **Recettes → Réglages**. Gemini ne propose ensuite que des étapes compatibles avec les appareils activés.
@@ -79,6 +79,6 @@ Cette approche avec une clé saisie par l’utilisateur convient à un prototype
 
 ## Limites du prototype
 
-La structure des tickets varie selon les magasins. Le parseur couvre les lignes usuelles et l’écran de validation est volontairement obligatoire. L’OCR ne garantit pas une lecture parfaite des tickets flous ou inclinés.
+La structure des tickets varie selon les magasins. Le parseur couvre les lignes usuelles et l’écran de validation est volontairement obligatoire. L’OCR ne garantit pas une lecture parfaite des tickets flous ou inclinés. Le plus adapté est les .pdf directement récupérer dans les applications des supermarchés.
 
 L’inventaire est mis à jour au moment où l’utilisateur confirme **Plat préparé**. L’app ne peut pas détecter physiquement, sans capteur, qu’un aliment a été consommé autrement ; les corrections manuelles restent donc possibles.
