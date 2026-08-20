@@ -4,7 +4,7 @@
 
 # Mijot — assistant de repas iOS à partir de tickets PDF
 
-Elle importe un ticket PDF depuis les fichiers, le fait analyser par Gemini, laisse l’utilisateur corriger les aliments retenus, puis alimente un inventaire JSON privé stocké sur l’appareil.
+Lors du lancement de l'application, un profil nutritionnel est réalisé très rapidement puis ensuite a partir d'un ticket PDF, une analyse est faite par Gemini, laissant l’utilisateur corriger les aliments retenus ainsi que les coûts, le tout alimente un inventaire JSON privé stocké sur l’appareil.
 
 La détection et les recettes reposent sur Gemini avec la clé personnelle de l’utilisateur. Aucun catalogue de recettes local n’est affiché : le nombre de recettes choisi par l’utilisateur est généré pour le stock réellement présent.
 
@@ -36,7 +36,7 @@ La détection et les recettes reposent sur Gemini avec la clé personnelle de l�
 - deux idées de repas rapprochées lorsque viande ou poisson correspondent à deux portions ;
 - clé Gemini conservée dans le Trousseau iOS, jamais dans le code source ;
 - ajout d’une recette à un ou plusieurs jours, au déjeuner ou au dîner, puis planning hebdomadaire avec déplacement par glisser-déposer ;
-- intégration EventKit avec les calendriers Apple, iCloud et Google déjà configurés sur l’appareil ;
+- intégration EventKit avec les calendriers Apple, iCloud déjà configurés sur l’appareil ;
 - choix du calendrier de destination et horaires persistants : déjeuner à 12 h 30 et dîner à 19 h 30 par défaut ;
 - création d’un événement contenant le nom du plat, les portions, les calories et les ingrédients ;
 - déplacement et suppression répercutés dans le calendrier pour les repas synchronisés ;
@@ -51,6 +51,7 @@ La détection et les recettes reposent sur Gemini avec la clé personnelle de l�
 3. Lancer la cible `Mijot`.
 
 Le projet utilise une signature automatique. Pour l’installer sur un iPhone, sélectionner son équipe de développement dans **Signing & Capabilities**.
+Il faut savoir qu'au bout de une semaine, l'application ne s'ouvrira plus du a l'équipe de développement gratuite, il suffira de recompiler l'application sur l'appareil iOS, dans le cas inverse il faut payer une licence de développement.
 
 ## Activer Gemini gratuitement pour un usage personnel
 
@@ -82,3 +83,16 @@ Cette approche avec une clé saisie par l’utilisateur convient à un prototype
 La structure des tickets varie selon les magasins. Le parseur couvre les lignes usuelles et l’écran de validation est volontairement obligatoire. L’OCR ne garantit pas une lecture parfaite des tickets flous ou inclinés. Le plus adapté est les .pdf directement récupérer dans les applications des supermarchés.
 
 L’inventaire est mis à jour au moment où l’utilisateur confirme **Plat préparé**. L’app ne peut pas détecter physiquement, sans capteur, qu’un aliment a été consommé autrement ; les corrections manuelles restent donc possibles.
+
+
+## Ajouts à venir 
+
+- Ajout d'un mode famille
+    - Modifier le nombre de personne
+    - Option de calendrier partagé
+    - Choix nutritionnel de chaque
+ 
+- Ajout d'un suivi de l'apport calorique quotidien
+    - Sous la forme d'une barre latérale de progression selon l'avancement de celle-ci
+    - Ajout d'apport de collation en dehors des repas (Soit à travers du texte, soit avec une photo et un traitement de Gemini pour qu'il détecte automatiquement l'aliment et la quantité et les apports nutritionnels).
+    - Ajout d'un système de notification entre les repas afin de solliciter l'utilisateur à prendre une collation afin de remplir l'objectif. 
