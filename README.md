@@ -92,3 +92,11 @@ L’inventaire est mis à jour au moment où l’utilisateur confirme **Plat pr�
     - Option de calendrier partagé
     - Choix nutritionnel de chaque
  
+
+
+## Licence
+
+Le code source de Mijot est distribué sous licence MIT. Consultez le fichier [LICENSE](LICENSE).
+
+Le nom « Mijot », le logo et les éléments graphiques originaux ne sont pas inclus dans cette licence. Aucun droit d’utilisation de la marque Mijot n’est accordé.
+ 
