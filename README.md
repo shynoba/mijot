@@ -92,7 +92,3 @@ L’inventaire est mis à jour au moment où l’utilisateur confirme **Plat pr�
     - Option de calendrier partagé
     - Choix nutritionnel de chaque
  
-- Ajout d'un suivi de l'apport calorique quotidien
-    - Sous la forme d'une barre latérale de progression selon l'avancement de celle-ci
-    - Ajout d'apport de collation en dehors des repas (Soit à travers du texte, soit avec une photo et un traitement de Gemini pour qu'il détecte automatiquement l'aliment et la quantité et les apports nutritionnels).
-    - Ajout d'un système de notification entre les repas afin de solliciter l'utilisateur à prendre une collation afin de remplir l'objectif. 
