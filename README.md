@@ -92,6 +92,8 @@ L’inventaire est mis à jour au moment où l’utilisateur confirme **Plat pr�
     - Option de calendrier partagé
     - Choix nutritionnel de chaque
  
+- Ajout d’un mode sombre !!
+ 
 
 
 ## Licence
